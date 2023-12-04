@@ -1,0 +1,193 @@
+<!----Inceputul domeniului HTML----->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----Setarea caracterelor si a vewport-ului pentru dispozitivele mobile----->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Titlul paginii----->
+    <title>University Website Design</title>
+    <!---Legatura catre fisierele CSS pentru stilizare---->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <!---Legatura catre font-awesome pentru utilizarea iconitelor---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+</head>
+<body>
+<!-- HEADER SECTION -->
+     <section class="header">
+        <nav>
+            <!---Logo-ul universitatii cu link catre pagina principala-->
+            <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+            <!---Meniul de navigare (buton de deschidere si lista de link-uri)--->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#course">COURSE</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <!--Buton de deschidere a meniului pe dispozitive mici-->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <!---Caseta de text in sectiunea header--->
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p><i>Building Minds, Building Futures!</i></p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+     </section>
+
+     <!-- COURSE SECTION -->
+     <section class="course">
+        <!-- Titlu și descriere pentru secțiunea de cursuri -->
+        <h1>Courses We Offer</h1>
+        <p>Ipsum assumenda iste maxime consequuntur dicta animi ipsam, tempora beatae natus qui minima.</p>
+      <!-- Rând de box-uri pentru fiecare tip de curs -->
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p> Pariatur neque sapiente accusamus odit soluta officiis aperiam blanditiis maxime optio, ab repudiandae repellat minima.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p> Temporibus magnam eos illo eius, reprehenderit quasi illum architecto obcaecati?</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Temporibus magnam eos illo eius, reprehenderit quasi illum architecto obcaecati?</p>
+</div>
+    </div>
+     </section>
+
+     <!---------- SECTION CAMPUS ------------->
+     <section class="campus">
+         <!-- Titlu și descriere pentru secțiunea de campus -->
+        <h1>Our Global Campus</h1>
+        <p>Ratione libero iste explicabo officiis quo qui quos eius hic ipsa, nostrum, veniam repellendus odit voluptatum nisi fuga nemo praesentium itaque accusamus.</p>
+
+        <!-- Rând de imagini și titluri pentru diferite campusuri -->
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/Kiev.jpg" alt="Kiev"/>
+                <div class="layer">
+                    <h3>KIEV</h3>
+                </div>
+            </div>
+                <div class="campus-col">
+                    <img src="images/London.jpg" alt="London"/>
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                    <div class="campus-col">
+                        <img src="images/Seul.jpg" alt="Seul"/>
+                        <div class="layer">
+                            <h3>SEUL</h3>
+                        </div>
+                    </div>
+        </div>
+     </section>
+
+     <!------------FACILITIES SECTION -------------->
+     <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Architecto doloremque aliquam aspernatur error veniam omnis tempore possimus, excepturi temporibus autem. Aperiam saepe adipisci ipsam qui repellat minus ab asperiores rerum.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg" alt="library">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cum qui provident molestiae eos in impedit nemo nulla architecto.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cheerleading.jpg" alt="cheerleading">
+                <h3>Professional Cheerleading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum qui provident molestiae eos in impedit nemo nulla architecto.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.jpg" alt="cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cum qui provident molestiae eos in impedit nemo nulla architecto.</p>
+            </div>
+        </div>
+     </section>
+
+
+     <!-------------TESTIMONIALS ------------>
+     <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.jpg" alt="Student 1">
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis velit minus culpa? Reprehenderit obcaecati molestiae quam, voluptate esse aspernatur consequatur, velit ipsam tempore maiores atque eligendi, placeat dignissimos? Saepe?</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg" alt="Student 2">
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nobis velit minus culpa? Reprehenderit obcaecati molestiae quam, voluptate esse aspernatur consequatur, velit ipsam tempore maiores atque eligendi, placeat dignissimos? Saepe?</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!----------- CALL TO ACTION ----------->
+     <section class="cta">
+        <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+     </section>
+
+
+    <!----------- FOOTER ----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Voluptas deleniti aliquam expedita laudantium<br> reiciendis id aliquid nesciunt consectetur veritatis. 
+         </p>
+         <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+         </div>
+         <p>Made with <i class="fa-regular fa-heart"></i> by Liuba Tofan.</p>
+    </section>
+
+
+<!--- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
